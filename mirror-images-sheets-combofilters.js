@@ -24,7 +24,7 @@ function buildLayout() {
     masonry: {
       fitWidth: true
     }
-  });
+  }}});
   
   $(".option-set a").click(function(e) {
    var $this = $(this); // cache the clicked link
