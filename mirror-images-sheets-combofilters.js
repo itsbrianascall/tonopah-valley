@@ -16,7 +16,7 @@ const contentLoaded = function() {
 //BUILD LAYOUT FUNCTION
 function buildLayout() {
   $('.lds-ring').fadeOut();
-  var filters = {}; //should be outside the scope of the filtering function
+  var filters = {; //should be outside the scope of the filtering function
   //initialise isotope
   const $grid = $('.grid_wrapper').isotope({
     itemSelector: '.grid-item',
