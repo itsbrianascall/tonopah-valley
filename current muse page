@@ -1,0 +1,3610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+        crystal clear / no container (gif pack directory) by fakehelper
+ 
+                    credits
+                    - google fonts (karla)
+                    - phosphor icon font
+                    - tumblr controls by cyantists
+                    - gradient blob by Signal Supply
+                    
+                search ":root" to change theme colors!!  
+                
+            to change icons, use https://phosphoricons.com/
+to change gradient blob, go to https://toolbox.signalsupply.co/ and edit #seed
+            
+ 
+    
+    
+-->
+
+
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+
+<link href="https://static.tumblr.com/51fnf0s/BCoprzst5/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/51fnf0s/lKGprzsse/jquery.style-my-tooltips.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fakethemes/gifpackpages@latest/crystalclear/JS/style-my-tooltips.js"></script>
+
+
+
+                                <!--- fonts --->
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+
+
+                        /* CHANGE THEME COLORS HERE 
+*/                        
+
+:root {
+                        --main-txt-color: #fff;
+                        --second-txt-color: #333; 
+                        --border-color: #cccccc;
+                        --accent1: #033649;
+                        --accent2: #036564;
+                        --solid-bg-color: #f6f6f6;
+                        --button-color:#f6f6f6;
+                        --margins:20px;
+                        
+                    /* change your gif size here */        
+                        --gif-width:255px;
+                        --gif-height:375px;
+                        
+                /* if using gradient bg, change colors here */
+                 
+                        --gradient-colors:#033649,#036564;
+}
+
+/* tumblr controls by cyantists */
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:0!important;
+    right:0!important;
+    opacity:0.4;
+    /* delete invert(1) from here */
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    /* to here if your blog has a dark background */
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;
+    margin-top:12px;
+}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.6!important;}
+
+    
+html, body {
+    margin: 0;
+    padding: 0;
+    color:#000;
+    overflow:hidden;
+    overflow-x: hidden;
+    width:100%;
+    font: 13px 'Open Sans', Helvetica, sans-serif;
+    height: auto;
+    background-image:url('https://i.imgur.com/kmUkgEP.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}    
+    
+
+    
+a {
+    color:#111;
+    text-decoration:none;
+}
+
+b {
+    color:#111;
+    font-weight:bold;
+    text-decoration:none;
+}
+    
+h1 {
+    color:var(--accent1);
+    font-family: 'Karla', serif;
+    margin-top:30px;
+    font-weight:800;
+    font-size:30px;
+    text-transform:uppercase;
+    text-align:center;
+    padding:none;
+} 
+
+h2 {
+    position: relative;
+    color:var(--accent1);
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    font-size:13px;
+    line-height:20px;
+    display:inline-block;
+    text-transform:uppercase;
+    text-align:center;
+}  
+
+
+#s-m-t-tooltip{
+  /* basic */
+  max-width:500px;
+  z-index:999999999;
+  padding:5px 10px 5px 10px;
+  background:#222;
+  font-family:'karla';
+  font-size:11px;
+  text-transform:uppercase;
+  color:#fff;
+  border:none;
+  box-shadow:none;
+  border-radius:20px;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 2px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    width: 1px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: var(--accent1); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: var(--accent1);
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--accent2);
+}  
+
+.searchhold h2 {
+    width:160px;
+}
+
+.searchhold {
+    top:0px;
+    width:260px;
+    height:60px;
+    right:22px;
+    display:inline-block;
+    text-align:center;
+    position:absolute;
+    float:right;
+}
+
+.searchbar {
+    top:0px;
+    left:0px;
+    position: relative;
+    text-align:center;
+    padding-bottom:10px;
+    display:inline-block;
+}
+
+.quicksearch {
+      width:200px;
+
+}
+
+input[type="text"] {
+
+  font-size: 12px;
+  font-family:'karla';
+  border:1px solid var(--accent1);
+  border-radius: 50px;
+  padding: 2px 23px 2px 10px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.arms {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align:center;
+    border-radius:10px;
+    top:0px;
+    padding-top:190px;
+    padding-bottom:20px; 
+}
+
+
+.grid {
+    width: calc(var(--gif-width)*4 + var(--margins)*6);
+    height: 100vh;
+    margin: 0 auto 50px;
+    overflow-y: hidden;
+    border:none;
+    margin:auto;
+    left:var(--margins);
+    right:0;
+    top:0;
+    bottom:0;
+    position: absolute;
+    padding:var(--margins);
+    background-color:none;
+    padding-bottom:20px; 
+
+}
+
+
+.grid:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/* Mobile  */
+@media only screen and (max-width: 1200px) {
+.arms {
+    width: 100%;
+    margin: 0 auto;
+    height: 76%;
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border:none;
+}    
+  .grid {
+    width: calc(var(--gif-width)*3 + var(--margins)*4);
+    margin:0 auto;
+    position: absolute;
+    height:auto;
+    overflow:hidden;
+    border:none;
+    background-color:none;
+    padding-top:0px;
+    padding-left:0px;
+    padding-bottom:50px;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+.arms {
+    width: 100%
+    margin: 0 auto;
+    height: 90%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}     
+    
+  .grid {
+    width: calc(var(--gif-width)*2 + var(--margins)*3);
+    margin:0 auto;
+    position: relative;
+    height:auto;
+    overflow:hidden;
+    border:none;
+    background-color:none;
+    padding-left:0px;
+    padding-bottom:50px;
+    margin-top:-180px;
+
+  }
+  
+.choose {
+      display:none;
+  } 
+
+
+}
+
+@media only screen and (max-width: 480px) {
+.arms {
+    width: 100%;
+    margin: 0 auto;
+    height: 80%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}     
+    
+  .grid {
+    width: var(--gif-width);
+    margin:0 auto;
+    position: relative;
+    height:60%;
+    border:none;
+    background-color:none;
+    top:-200px;
+  }
+  
+  .choose {
+      display:none;
+  }
+  
+  
+}
+
+/* dont u do it */
+.credit {
+    font-size:16px;
+    bottom:1%;
+    right:1%;
+    position:absolute;
+    z-index:111;
+}   
+
+.credit a {
+    color:var(--second-txt-color);
+} 
+
+.credit a:hover {
+    color:var(--accent2);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}
+
+/*      HEADER       */
+
+.choose {
+    position:absolute;
+    display:block;
+    width:1260px;
+    height:150px;
+    margin:0 auto;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    margin-top:10px;
+    overflow:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.05); 
+    background-color:rgba(250,250,250,0.8);
+        backdrop-filter: blur(10px);
+    border:1px solid var(--border-color);
+    padding:20px;
+    z-index:99;
+}
+
+ .choose:after {
+  content:"";
+  display: block;
+  clear: both;
+ }
+
+.choose-left {
+    left:0;
+    width:260px;
+    float:left;
+    height:210px;
+    margin-top:-20px;
+    
+}
+
+.choose-right {
+    left:0;
+    margin-top:-10px;
+    width:600px;
+    height:210px;
+    display:inline-block;
+}
+
+.button {
+    padding:none;
+    border:none;
+}
+
+.divide {
+    top:80px;
+    right:0;
+    position:absolute;
+    width:1040px;
+    height:1px;
+    background-color:var(--border-color);
+    padding:none;
+}
+
+.divide2 {
+    top:0px;
+    left:260px;
+    width:1px;
+    height:190px;
+    position:absolute;
+    background-color:var(--border-color);
+    padding:none;
+}
+
+.divide3 {
+    top:0px;
+    right:804px;
+    width:1px;
+    height:80px;
+    position:absolute;
+    background-color:var(--border-color);
+    padding:none;
+}
+
+
+.divide4 {
+    top:0px;
+    right:304px;
+    width:1px;
+    height:80px;
+    position:absolute;
+    background-color:var(--border-color);
+    padding:none;
+}
+
+.title {
+    margin-top:-45px;
+    margin-left:-20px;
+    width:260px;
+    position:fixed;
+}
+
+.title h2 {
+    top:-43px;
+    width:260px;
+    color:var(--second-txt-color);
+    font-size:16px;
+    font-weight:800;
+    text-align:center;
+    letter-spacing:1px;
+    font-style:italic;
+}
+
+.navigation {
+    bottom:45px;
+    left:0;
+    position:fixed;
+    width:260px;
+    height:10px;
+    text-align:center;
+    border-top:1px solid var(--border-color);
+}
+ 
+.navigation a {
+    margin-left:-1px;    
+    padding-top:17px;
+    padding-left:6px;
+    padding-right:4px;
+    width:20px;
+    height:27.5px;
+    font-size:22px;
+    text-align:center;
+    color:var(--accent1);
+    display:inline-block;
+}
+
+.navigation a:hover {
+    color:var(--accent2);
+}        
+
+/*      STATUS FILTERS       */
+
+.cats {
+    position:relative;
+    margin-top:-15px;
+    height:95px;
+    overflow:none;
+    padding:none;
+    width:200px;
+}
+
+.cats h2 {
+    width:200px;
+} 
+
+.cats .button-group {
+    position:relative;
+    width:200px;
+    height:45px;
+    display:inline-block;
+    text-align:center;
+    margin-left:-70px;
+    margin-top:-10px;
+    
+}
+
+.cats .filter .button {
+    width:34px;
+    height:34px;
+    position:absolute;
+    background-color:var(--button-color);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+    padding:0px;
+    
+}
+
+.cats .filter .selected {
+    background-color:var(--accent1);
+    
+}
+
+.cats .filter .selected i {
+    color:var(--main-txt-color);
+    
+}
+
+
+.cats .filter i {
+    color:var(--second-txt-color);
+    font-size:20px;
+    padding:7px 0px 10px 0px;
+    text-align:center;
+}
+
+.cats .filter li {
+    padding: 6px;
+    position:relative;
+    margin-left:26px;
+    margin-bottom:26px;
+    display: inline-block;
+}
+
+.cats .filter ul {
+    left:0;
+    padding:0;
+}
+
+/*      GENDER FILTERS       */
+
+.cats2 {
+    position:absolute;
+    margin-top:-95px;
+    margin-left:260px;
+    height:95px;
+    overflow:none;
+    padding:none;
+    width:450px;
+}
+
+.cats2 h2 {
+    width:450px;
+} 
+
+.cats2 .button-group {
+    position:relative;
+    width:450px;
+    height:45px;
+    display:inline-block;
+    text-align:center;
+    margin-left:-70px;
+    margin-top:-10px;
+    
+}
+
+.cats2 .filter .button {
+    height:20px;
+    min-width:30px;
+    color:var(--second-txt-color);
+    font-family:'karla';
+    font-style:400;
+    font-weight:600;
+    font-size:12px;
+    line-height:10px;
+    text-transform:uppercase;
+    padding:10px 20px 20px 20px;
+    text-align:center;
+    background-color:var(--button-color);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+    margin:-15px;
+}
+
+.cats2 .filter .selected {
+    background-color:var(--accent1);
+    color:var(--main-txt-color);
+    
+}
+
+.cats2 .filter .selected i {
+    color:var(--main-txt-color);
+    
+}
+
+
+.cats2 .filter i {
+    color:var(--second-txt-color);
+    font-size:20px;
+    padding:7px 0px 10px 0px;
+    text-align:center;
+}
+
+.cats2 .filter li {
+    padding: 6px;
+    position:relative;
+    margin-left:26px;
+    margin-bottom:26px;
+    display: inline-block;
+}
+
+.cats2 .filter ul {
+    left:0;
+    padding:0;
+}
+
+
+/*      PILL SHAPED FILTERS       */
+
+.pills {
+    height:65px;
+    width:1040px;
+    padding:0;
+    margin-top:-7px;
+    display:inline-block;
+    position:relative;
+}
+
+.pills h2 {
+    padding:0 5px;
+    margin-left:-10px;
+}   
+
+.pills .button-group {
+    padding:0;
+    width:910px;
+    height:auto;
+    display:inline-block;
+}
+
+.pills .filter .button {
+    height:20px;
+    min-width:30px;
+    color:var(--second-txt-color);
+    font-family:'karla';
+    font-style:400;
+    font-weight:600;
+    font-size:12px;
+    line-height:10px;
+    text-transform:uppercase;
+    padding:5px 10px;
+    text-align:center;
+    background-color:var(--button-color);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+}
+
+.pills .filter .selected {
+    color:var(--button-color);
+    background-color:var(--accent1);
+    border:1px solid var(--accent2);
+}
+
+
+.pills .filter li {
+    list-style-type:none;
+    display: inline;
+    line-height:20px;
+    
+}
+
+.pills .filter ul {
+    margin-left:-180px;
+    float:left;
+    list-style-position: outside;
+}
+
+.pills2 {
+    height:65px;
+    width:1040px;
+    padding:0;
+    margin-top:-7px;
+    display:inline-block;
+    position:relative;
+}
+
+.pills2 h2 {
+    padding:0 5px;
+    margin-left:-10px;
+}   
+
+.pills2 .button-group {
+    padding:0;
+    width:910px;
+    height:auto;
+    display:inline-block;
+}
+
+.pills2 .filter .button {
+    height:20px;
+    min-width:30px;
+    color:var(--second-txt-color);
+    font-family:'karla';
+    font-style:400;
+    font-weight:600;
+    font-size:12px;
+    line-height:10px;
+    text-transform:uppercase;
+    padding:0 10px;
+    text-align:center;
+    background-color:var(--button-color);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+}
+
+.pills2 .filter .selected {
+    color:var(--button-color);
+    background-color:var(--accent1);
+    border:1px solid var(--accent2);
+}
+
+
+.pills2 .filter li {
+    list-style-type:none;
+    display: inline;
+    line-height:20px;
+    
+}
+
+.pills2 .filter ul {
+    margin-left:-180px;
+    float:left;
+    list-style-position: outside;
+}
+
+.pills3 {
+    height:65px;
+    width:950px;
+    padding:0;
+    margin-top:-65px;
+    display:inline-block;
+    position:absolute;
+}
+
+.pills3 h2 {
+    padding:0 5px;
+}   
+
+.pills3 .button-group {
+    padding:0;
+    width:910px;
+    height:auto;
+    display:inline-block;
+}
+
+.pills3 .filter .button {
+    height:20px;
+    min-width:30px;
+    color:var(--second-txt-color);
+    font-family:'karla';
+    font-style:400;
+    font-weight:600;
+    font-size:12px;
+    line-height:10px;
+    text-transform:uppercase;
+    padding:0 10px;
+    text-align:center;
+    background-color:var(--button-color);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+}
+
+.pills3 .filter .selected {
+    color:var(--button-color);
+    background-color:var(--accent1);
+    border:1px solid var(--accent2);
+}
+
+
+.pills3 .filter li {
+    list-style-type:none;
+    display: inline;
+    line-height:20px;
+    
+}
+
+.pills3 .filter ul {
+    margin-left:-180px;
+    float:left;
+    list-style-position: outside;
+}
+
+                                 /* CARD STYLING */
+
+.item {
+    width:var(--gif-width);
+    height:calc(var(--gif-height) + 286px); /* if removing any elements change height here */
+    border-radius:5px;
+    border:2px solid var(--border-color);
+    float:left;
+    margin: calc(var(--margins) / 2);
+    z-index:1;
+    background-color:#fff;
+}
+
+/* card image styles */
+
+.item img {
+    padding:none;
+    margin-top:0px;
+    height:auto;
+    border-radius:5px 5px 0px 0px;
+    padding-bottom:0px;
+    border-bottom:1px solid var(--border-color);
+}
+
+
+/* fc name */
+.name {
+    width:100%;
+    height:50px;
+    display:inline-block;
+    background: var(--accent1);
+    text-shadow: 2px 2px var(--second-txt-color);
+}
+
+.name h1{
+    margin-top:-1px;
+    color:#fff;
+    font-family: 'Stalemate', cursive;
+    font-weight: 500;
+    font-size:32px;
+    letter-spacing:1.6px;
+    padding:5px;
+    text-transform:none;
+    text-align:center;
+    font-style:normal;
+}
+
+/* info + links */
+
+.info {
+    color:var(--second-txt-color);
+    width:calc(var(--gif-width) - 20px );
+    font-family:'karla';
+    font-size:13px;
+    margin:0 auto;
+    padding:0px 10px;
+    text-transform: uppercase;
+    font-weight:bold;
+    display:inline-block;
+    height:44px;
+    line-height:44px;
+    border-bottom:1px solid var(--border-color);
+    
+} 
+
+.info p {
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* affiliation */
+
+.extrainfo {
+    width:100%;
+    height:40px;
+    border-bottom:1px solid var(--border-color);
+    color:var(--accent2);
+    font-family:'Open Sans', sans-serif;
+    font-weight:600;
+    font-size:11px;
+    text-transform:uppercase;
+    margin-top:0px;
+    text-align:center;
+}
+
+.status {
+    width:100%;
+    margin-left:0px;
+    padding:13px 2px;
+    float:left;
+}
+
+
+/* links */
+.clickies {
+    width:var(--gif-width);
+    margin-top:12px;
+    height:auto;
+    position:absolute;
+    text-align:center;
+    border-radius:5px;
+    overflow:hidden;
+    padding-bottom:20px;
+    padding-top:8px;
+}
+
+ 
+.clickies a {
+    padding:8px 8px;
+    font-size:20px;
+    text-align:center;
+    color:var(--main-txt-color);
+    background-color:var(--accent1);
+    border-radius:22px;
+    margin:8px;
+    margin-top:10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s  ease;
+    -o-transition: all .3s  ease;
+    transition: all .3s  ease;
+}
+
+.clickies a:hover{
+    color:var(--main-txt-color);
+    background-color:var(--accent2);
+}
+
+
+/* quotes */
+.quotes {
+    border-top:1px solid var(--border-color);
+    width:calc(var(--gif-width) - 10px );
+    bottom:0;
+    height:80px;
+    position:absolute;
+    padding: 0 5px 10px 5px;
+    line-height: 145%;
+    font-size: 13px;
+    font-style: italic;
+    overflow-y: auto;
+    color:var(--second-txt-color);
+    margin-top:10px;
+}
+
+.quotes p {
+    padding: 6px;
+    margin-top:5px;
+}
+
+/* profile on hover */
+
+.item:hover .profile {
+    content:'\eb6a';
+    width:var(--gif-width);
+    height:165px;
+    padding-top:135px;
+    padding-bottom:75px;
+    background: rgba(3, 54, 73, 0.2); /* See-through */
+    opacity:1;
+}
+
+.profile {
+    position: absolute; 
+    width:var(--gif-width);
+    height:var(--gif-height);
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    z-index: 9999;
+}
+
+.profile a {
+    display: block;
+    padding: 5px 10px;
+    margin: 3px 25px;
+    font-size: 11px;
+    text-align: center; 
+    text-transform: uppercase;
+    background: #000;
+    color: #FAFAFA;
+}
+
+.profile a:hover {
+    background: #033649;
+    color:#fff;
+}
+
+
+
+</style>
+</head>
+<body><div id="seed"></div><div id="seed2"></div><div id="background"></div>
+
+<div class="choose">
+<div class="divide"></div><div class="divide2"></div><div class="divide3"></div><div class="divide4"></div>
+<div class="title">
+                        <!--- edit title here--->
+                            <h1>RESIDENTS</h1>
+                        <h2>of tonopah valley</h2>
+                        <center style="margin-top:-70px; padding:15px; font-family:arial;font-size:13px;">here you will find all of the characters, as well as important non-playable characters and ones who are no longer with us. please let us know if you see anything that requires fixing.</center>
+</div>
+<div class="choose-left">
+<div class="navigation">
+      <!--- edit nav links here, use phosphor icons to change the icons!--->
+<a href="/" class="ph ph-house" title="Back to Town"></a>
+<a href="/" class="ph ph-chats-teardrop" title="Post Office"></a>
+<a href="/n" class="ph ph-map-trifold" title="Town Map"></a>
+<a href="/r" class="ph ph-scales" title="Law Book"></a>
+<a href="/l" class="ph ph-storefront" title="Locations"></a>
+<a href="/g" class="ph ph-skull" title="Gangs"></a>
+<a href="/apply" class="ph ph-pencil-line" title="Apply"></a>
+</div>
+</div>
+
+<div class="choose-right">
+ <div class="cats filters">
+<!---                       edit filters here !!
+ 
+ basically, just put a . in front of the filter and then make sure to include that in the div class below! For example, for completed packs, the filter here would be .c and in the card you would put like <div class="item c"> 
+ 
+ for in progress you could do .ip and then <div class="item ip"> 
+ 
+ if you have multiple filters, you can do <div class="item c poc nb"> for a completed pack with a nonbinary person of color. get it? if not, shoot me an ask! 
+ 
+ 
+ 
+ --->
+                            <h2>Status</h2>
+<ul class="filter button-group exclusive" data-filter-group="group2">
+    <div class="category">
+<li><button class="button filter selected" data-filter=""><i class="ph ph-users-three" title="All"></i></button></li>
+
+<li><button class="button filter" data-filter=".active"><i class="ph ph-user-plus" title="in play"></i></button></li>
+
+<li><button class="button filter" data-filter=".dead"><i class="ph ph-user-minus" title="deceased"></i></button></li>
+
+<li><button class="button filter" data-filter=".npc"><i class="ph ph-user-gear" title="non-playable character"></i></button></li>
+      
+   </div>
+    </ul>
+</div>
+
+<div class="cats2 filters">
+                     <h2>GENDER</h2>
+<ul class="filter button-group exclusive" data-filter-group="group1">
+<li><button class="button filter selected" data-filter="" style="border-right:1px solid var(--border-color);">All Genders</a></button></li>
+
+<li><button class="button filter" data-filter=".m">Man</button></li>
+
+<li><button class="button filter" data-filter=".nb">NonBinary</button></li>
+
+<li><button class="button filter" data-filter=".f">Woman</button></li>
+</ul></div>
+
+<!--- leave this alone tho lol -->
+<div class="searchhold">
+                            <h2>Search by Keyword</h2>
+<div class="searchbar">
+<input type="text" class="quicksearch" placeholder="Search Residents" />
+</div>
+</div>
+
+                    <!--- add more filters here !! --->
+<div class="pills filters">
+                     <h2>AFFILIATION</h2>
+<ul class="filter button-group exclusive" data-filter-group="group3">
+<li><button class="button filter selected" data-filter="" style="border-right:1px solid var(--border-color);">All affiliations</a></button></li>
+
+<li><button class="button filter" data-filter=".ls">los santos</button></li>
+
+<li><button class="button filter" data-filter=".sos">sons of silence</button></li>
+
+<li><button class="button filter" data-filter=".te">the enterprise</button></li>
+      
+<li><button class="button filter" data-filter=".law">criminal justice</button></li> 
+         
+<li><button class="button filter" data-filter=".gov">government</button></li> 
+
+<li><button class="button filter" data-filter=".na">neutral civilians</button></li> 
+         
+         
+</ul></div>
+    
+    
+    <div class="pills2 filters" style="margin-top:-20px;">
+                     <h2>RANK</h2>
+<ul class="filter button-group exclusive" data-filter-group="group4">
+<li><button class="button filter selected" data-filter="" style="border-right:1px solid var(--border-color);">All ranks</a></button></li>
+
+<li><button class="button filter" data-filter=".mem">members</button></li>
+
+<li><button class="button filter" data-filter=".aff">affiliates</button></li></ul></div>
+         
+        
+    
+    <div class="pills3 filters" style="margin-left:300px;">   
+                  <h2>AGE</h2>
+<ul class="filter button-group exclusive" data-filter-group="group5">
+<li><button class="button filter selected" data-filter="" style="border-right:1px solid var(--border-color);">All ages</a></button></li>
+
+<li><button class="button filter" data-filter=".20">twenties</button></li>
+
+<li><button class="button filter" data-filter=".30">thirties</button></li>
+
+<li><button class="button filter" data-filter=".40">forties</button></li>
+      
+<li><button class="button filter" data-filter=".50">fifties</button></li> 
+
+<li><button class="button filter" data-filter=".60">sixties & up</button></li> 
+         
+         
+</ul></div>
+</div></div>
+
+<!-- end header -->
+
+<div class="arms"><div class="grid"><center>
+
+
+
+                        <!-- ADD YOUR CHARACTERS HERE -->
+
+
+<!--- START CHARACTER ----->
+
+<div class="item ls 30 mem f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Uppercut Boxing</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Eva de Dominici</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/279HK9h.png" alt="character image">
+<div class="name"><h1>Abril Moreno Fernandez</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>MAURA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">CAPO FOR LOS SANTOS</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://abrilmoreno.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/747563931668758528/name-abril-florencia-moreno-fernandez-abril"></a>
+</div>
+<div class="quotes">
+    <p>"Throw roses into the abyss and say: 'Here is my thanks to the monster who didn't succeed in swallowing me alive.'"
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->     
+
+
+
+<!--- START CHARACTER ----->
+
+<div class="item sos 30 m aff active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY-SEVEN</a> <!--- add age here ----->
+    <a class="" alt="occupation">Automotive painter<br> for Reaper Crew</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Paul Wesley</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/SCU9aL2.png" alt="character image">
+<div class="name"><h1>Aiden MacNally</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>AMY • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Affiliate of the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://aiden-macnally.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738889506511552512/name-aiden-macnally-age-29-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"Piss off."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->   
+
+<!--- START CHARACTER ----->
+
+<div class="item na f 30 active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Water Fairy<br> Art Studio</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Hande Erçel</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/Ubk4Fwx.png" alt="character image">
+<div class="name"><h1>Alara Kahya</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANNIE • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">NEUTRAL CIVILIAN</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://alara-kahya.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738889890899673088/name-alara-kahya-age-30-occupation-owner-of"></a>
+</div>
+<div class="quotes">
+    <p>"Draw the cat eyes sharp enough to kill a man."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+<!--- START CHARACTER ----->
+
+<div class="item ls f 50 mem npc dead"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">DECEASED</a> <!--- add age here ----->
+    <a class="" alt="occupation">EL GENERAL</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">ROSELYN SANCHEZ</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/AJcG0cc.png" alt="character image">
+<div class="name"><h1>Alejandra Eguia</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">EL GENERAL OF LOS SANTOS</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-article" title="back story" href="/ls"></a>
+</div>
+<div class="quotes">
+    <p>"You're never happy with not being the best."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->   
+
+
+<!--- START CHARACTER ----->
+
+<div class="item sos f 50 aff npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">FIFTY-FIVE</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Pop's Diner</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Angelina Jolie</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/Pp7ryyY.png" alt="character image">
+<div class="name"><h1>Ally MacNally</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">SONS OF SILENCE OLD LADY</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"God wants me to be a fierce mother."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item te 60 f aff npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">sixty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Decker Family<br> Horse Ranch</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Nicole Kidman</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/77CBi0o.png" alt="character image">
+<div class="name"><h1>Andrea Decker</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Associate for The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"I am neither here nor there, just existing and not making waves."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+<!--- START CHARACTER ----->
+
+<div class="item ls 30 m mem active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY-seven</a> <!--- add age here ----->
+    <a class="" alt="occupation">Chef at La Macina</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Peter Gadiot</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/ppYawvV.png" alt="character image">
+<div class="name"><h1>Antonio Jimenez</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>GREY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Bombardeo for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://antoniojimenez.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738893285802868736/name-antonio-jimenez-age-37-occupation-chef-at"></a>
+</div>
+<div class="quotes">
+    <p>"Marching along, like a good soldier does. I'm setting sail with anchors holding me down."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->   
+
+
+
+<!--- START CHARACTER ----->
+
+<div class="item law 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY-FIVE</a> <!--- add age here ----->
+    <a class="" alt="occupation">Police Detective</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Aubrey Plaza</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/4DxoNLa.png" alt="character image">
+<div class="name"><h1>April Batista-Brady</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">NEUTRAL CIVILIAN</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://abibatista.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739617283678273536/name-abril-abi-batista-brady-age-35-time"></a>
+</div>
+<div class="quotes">
+    <p>"Who you are is defined by what you're willing to struggle for."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+
+
+
+<!--- START CHARACTER ----->
+
+<div class="item ls 30 f npc aff"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Hex Appeal<br> & Madre Tierra</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Eiza González</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/iL70Ojs.png" alt="character image">
+<div class="name"><h1>Ariana Cruz</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANNIE • SHE/HER • GMT -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">La Asociación for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://ariana-cruz.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738891747345743872/name-ariana-aria-cruz-age-30-occupation-owner"></a>
+</div>
+<div class="quotes">
+    <p>"You're fucking with a goddess and the bitch bites back."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+
+
+
+<!--- START CHARACTER ----->
+
+<div class="item law gov 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY-EIGHT</a> <!--- add age here ----->
+    <a class="" alt="occupation">Hair Dresser at Lavished Lacquer & Undercover ATF Special Agent</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">DeWanda Wise</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/oOAqMM3.png" alt="character image">
+<div class="name"><h1>Ayodele Jackson</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>EDEN • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://ayojackson.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/748489346864250880/name-ayodele-jackson-age-38-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"She's not acid nor alkaline caught between black and white - not quite either day or night; she's perfectly misaligned"
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem sos 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of The Outpost</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Robbie Amell</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/14pRmDl.png" alt="character image">
+<div class="name"><h1>Beau Sinclair</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Secretary for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://beauaustinsinclair.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739647405456244736/name-beau-austin-sinclair-age-35-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"I'd drive right off the Earth to find you if it meant that I could see you tonight."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item mem sos law f 30 active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Criminal Defense Attorney<br> at Scott & Wells Law Firm</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Laura Vandervoort</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/S3NYjVi.png" alt="character image">
+<div class="name"><h1>Blake Scott</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>RACH • SHE/HER • CST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Patched Member</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://blakesara.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738892867422109696/name-blake-scott-age-36-occupation-defense"></a>
+</div>
+<div class="quotes">
+    <p>"And I'm trying to find that peace of mind, behind these two white highway lines. When the city goes silent the ringing in my ears gets violent."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+
+
+<!--- START CHARACTER ----->
+
+<div class="item gov law 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">ATF Special Agent</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Berk Cankat</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/bFKabXy.png" alt="character image">
+<div class="name"><h1>Celal Yılmaz</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANGIE • SHE/HER • GMT+1</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation" style="margin-top:-10px">CIVILIAN</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://celalyilmaz.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/749853482306142208/name-celal-yilmaz-age-33-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"The time is always right to do what is right."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+
+<!--- START CHARACTER ----->
+
+<div class="item te ls 40 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty</a> <!--- add age here ----->
+    <a class="" alt="occupation">Tattoo artist at Cosmic Ink</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">DJ Cotrona</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/mY1avNj.png" alt="character image">
+<div class="name"><h1>Chase McCoy</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation" style="margin-top:-10px">Soldier for The Enterprise<br> & Former Capo for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://chasemmccoy.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738925352913715200/character-name-chase-mccoy-age-39-time-living"></a>
+</div>
+<div class="quotes">
+    <p>"Just a wonderful lie; the confident kid who would never die."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item aff 30 f sos active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of the Gold Dust Diner</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Alicia Vikander</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/uEHx3Te.png" alt="character image">
+<div class="name"><h1>Chloe Anderson</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>A • SHE/HER • GMT+2</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Affiliate of the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://chloeandersonx.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/733580482900557824/name-chloe-anderson-age-36-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"Life isn’t about waiting for the storm to pass, it’s about learning how to dance in the rain."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item mem 30 m sos active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Reaper Crew</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Charlie Hunnam</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/15MTrkA.png" alt="character image">
+<div class="name"><h1>Cole Monroe</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>GREY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">President of the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://colemonroe.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738922061585661952/name-cole-monroe-age-38-occupation"></a>
+</div>
+<div class="quotes">
+    <p>"I have love in me the likes of which you can scarcely imagine and rage the likes of which you would not believe. If I cannot satisfy the one, I will indulge the other."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem npc dead m law te govt"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">DECEASED</a> <!--- add age here ----->
+    <a class="" alt="occupation">Assistant District Attorney</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Jamie Dornan</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/e73DoJB.png" alt="character image">
+<div class="name"><h1>Dante Parker</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Board Member of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-article" title="bio" href="/post/732199478524887040/name-dante-parker-age-41-occupation-assistant"></a>
+</div>
+<div class="quotes">
+    <p>"The real rulers... are invisible, and exercise power from behind the scenes."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item mem dead npc 50 m"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age" href="https://riley-macnally.tumblr.com/post/723671798373318656/location-tonopahs-bike-festival-when-9-months" title="death thread">Deceased</a> <!--- add age here ----->
+    <a class="" alt="occupation">Former president of the<br>Sons of Silence Eureka Charter</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Karl Urban</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/31vMwcD.png" alt="character image">
+<div class="name"><h1>Dean MacNally</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Founding Member of the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-article" title="bio" href="/post/739646857931784192/name-dean-jagger-macnally-age"></a>
+</div>
+<div class="quotes">
+    <p>"What have you got to lose that you ain't already lost?"
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item na 40 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Professor & Hacker for Hire</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Milo Ventimiglia</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/dJiyild.png" alt="character image">
+<div class="name"><h1>Devon Sinclair</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ARI • THEY/THEM • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://devon-sinclair.tumblr.com"></a>
+    <a class="ph ph-article" title="bio" href="/post/736013414180274176/name-devon-sinclair-age-46-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"The weight of the world is love. Under the burden of solitude, under the burden of dissatisfaction. The weight, the weight we carry is love."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->      
+
+
+<!--- START CHARACTER ----->
+
+<div class="item f dead npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">DECEASED</a> <!--- add age here ----->
+    <a class="" alt="occupation">Dancer/Performer</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Kate Winslet</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/lXGX32t.png" alt="character image">
+<div class="name"><h1>Diana Monroe</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-article" title="back story" href="https://colemonroe.tumblr.com/post/732748116657356800/monroe-family-originally-from-knoxville"></a>
+</div>
+<div class="quotes">
+    <p>"I'm a strange new kind of in between thing, aren't I? Not at home with the dead nor with the living."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+<!--- START CHARACTER ----->
+
+<div class="item aff te nb 30 active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of The Scarlet Lounge</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Emma D'Arcy</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/qJQZOV9.png" alt="character image">
+<div class="name"><h1>Ella Cooper</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ARI • THEY/THEM • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Associate of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://ella-cooper.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646471672086528/name-ella-cooper-age-33-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"Someone I loved once gave me a box full of darkness. It took me years to understand that this, too, was a gift."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+<!--- START CHARACTER ----->
+
+<div class="item mem te active m 40"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-nine</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of The Mayfair</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Oscar Isaac</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/lwfhANy.png" alt="character image">
+<div class="name"><h1>Elliott Ortega</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>A • SHE/HER • GMT+2</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Board Member for The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://elliottortegax.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/732628417724448768/name-elliott-ortega-age-49-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"I'm under no obligation to make sense to you."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+
+<!--- START CHARACTER ----->
+
+<div class="item aff sos f 30 active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-one</a> <!--- add age here ----->
+    <a class="" alt="occupation">Tattoo artist at Cosmic Ink<br> & Bartender at Mad Dog Brewery</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Ayça Ayşin Turan</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/HUESB3c.png" alt="character image">
+<div class="name"><h1>Emiri Tezel</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>AMY • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Hangaround for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://emiri-tezel.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738922200685543424/name-emiri-tezel-age-30-occupation-tattoo"></a>
+</div>
+<div class="quotes">
+    <p>"Wild spirit, soft heart, sweet soul."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item law gov 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-five</a> <!--- add age here ----->
+    <a class="" alt="occupation">Special Agent</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Serkan Çayoğlu</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/zqVciqI.png" alt="character image">
+<div class="name"><h1>Ender Yılmaz</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>GREY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://ender-yilmaz.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/746580283157004288/name-ender-yılmaz-age-thirty-five-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"There’s a little bit of bad in the best of us, a little bit of rust stuck to the gold."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+<!--- START CHARACTER ----->
+
+<div class="item na 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-two</a> <!--- add age here ----->
+    <a class="" alt="occupation">Journalist</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Margot Robbie</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/CWzhGjE.png" alt="character image">
+<div class="name"><h1>Felicity Sloane</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>JEN • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://flissxsloane.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/750678889970515968/name-felicity-fliss-sloane-age-32-time-living"></a>
+</div>
+<div class="quotes">
+    <p>"Me, with the leaking sunshine, all up in everyone's business with my unchecked fire, with my incontinent soul."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+<!--- START CHARACTER ----->
+
+<div class="item mem te 60 m npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Sixty-nine</a> <!--- add age here ----->
+    <a class="" alt="occupation">Real Estate Developer</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Pierce Brosnan</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/phAaaeX.png" alt="character image">
+<div class="name"><h1>Finnegan McNulty</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Board Member of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"Strong people are harder to kill than weak people and more useful in general."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item na 40 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Mad Dog Brewery</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Jensen Ackles</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/XaSBI78.png" alt="character image">
+<div class="name"><h1>Gabriel Knox</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>GREY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://gabriel-knox.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738922342821068800/name-gabriel-knox-age-43-occupation-owner-of"></a>
+</div>
+<div class="quotes">
+    <p>"I wanna set fear on fire and give dreaming a fair shot, and never give up whether anybody cares or not."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->   
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item na 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-four</a> <!--- add age here ----->
+    <a class="" alt="occupation">Employee at Apex Gun Range</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Jennifer Lawrence</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/pA90BPk.png" alt="character image">
+<div class="name"><h1>Gabrielle Harrison</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>A • SHE/HER • GMT+2</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://gabyharrisonx.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/740019068025946112/name-gabrielle-gaby-harrison-age-34-time"></a>
+</div>
+<div class="quotes">
+    <p>"If I can still breathe, I'm fucking fine."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item mem te 60 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Sixty-five</a> <!--- add age here ----->
+    <a class="" alt="occupation">Co-Owner and Co-Founder of The Enterprise Casino Conglomerate</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Giancarlo Esposito</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/w1BUsRX.png" alt="character image">
+<div class="name"><h1>Giovanni Ricci</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">CEO of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://giovanniiricci.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738925447262371840/name-giovanni-santino-ricci-age-65-time-living"></a>
+</div>
+<div class="quotes">
+    <p>"Everyone has a right to the throne... if they can take it."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->   
+
+
+<!--- START CHARACTER ----->
+
+<div class="item mem sos 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-nine</a> <!--- add age here ----->
+    <a class="" alt="occupation">Artisan for Hire</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Joseph Morgan</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/MMqeK1F.png" alt="character image">
+<div class="name"><h1>Hale Kincaid</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRI 2.0 • SHE/THEY • CST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Patched Member</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://www.tumblr.com/halekincaid"></a>
+    <a class="ph ph-article" title="bio" href="/post/743525746601017344/name-hale-kincaid-age-39-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"You don't arm yourself after war has been declared. You build your army so big that no one dares pick the fight."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->                     
+
+<!--- START CHARACTER ----->
+
+<div class="item na law npc m 60 govt"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Sixty-</a> <!--- add age here ----->
+    <a class="" alt="occupation">Tonopah Valley Chief of Police</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Mark Harmon</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/SepQhIq.png" alt="character image">
+<div class="name"><h1>Harold Donovan</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"If you don’t know who I am, then maybe your best course would be to tread lightly."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+<!--- START CHARACTER ----->
+
+<div class="item law 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">ATF Sniper</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Katheryn Winnick</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/t1NJRaM.png" alt="character image">
+<div class="name"><h1>Hayden Cassidy</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Capo for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://haydencassidyy.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/749853760535281664/name-age-time-living-in-tonopah-occupation"></a>
+</div>
+<div class="quotes">
+    <p>"I am a stitch away from making it and a scar away from falling apart."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+
+<!--- START CHARACTER ----->
+
+<div class="item mem ls 40 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-two</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of First & Vine</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Josh Segarra</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/7TMs0AR.png" alt="character image">
+<div class="name"><h1>Hernando Valdez</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ARI • THEY/THEM • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Capo for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://hernando-valdez.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646541473726464/name-hernando-valdez-age-42-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"The world is almost peaceful when you stop trying to understand it."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+<!--- START CHARACTER ----->
+
+<div class="item na m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Mechanic at Reaper Crew</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Alan Ritchson</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/F5Ce23o.png" alt="character image">
+<div class="name"><h1>Hunter Cassidy</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>M • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://huntercassidy.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/749916132858789888/name-hunter-cassidy-age-38-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"I have stopped bringing flowers to the grave of the person I used to be."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+<!--- START CHARACTER ----->
+
+<div class="item na 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Surgeon at Tonopah Medical Center</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Rahul Kohli</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/C4j9dTS.png" alt="character image">
+<div class="name"><h1>Ian Malik</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>RAY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://ianmaliks.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/748850186786390016/name-ian-malik-age-38-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"Should you shield the canyons from the windstorms you would never see the true beauty of their carvings."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+ 
+
+<!--- START CHARACTER ----->
+
+<div class="item mem dead m npc sos"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">DECEASED</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of The Black Rabbit</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Clayton Cardenas</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/TFyQQTC.png" alt="character image">
+<div class="name"><h1>Isaac Gonzalez</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>B • SHE/HER • GMT+1 -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Former Enforcer for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://isaacgonzalez.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739647481081708544/name-isaac-gonzalez-age-40-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"I have the keenest mind that has ever been turned to unlawful pursuits."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item aff ls 30 f npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-two</a> <!--- add age here ----->
+    <a class="" alt="occupation">Part-time model</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Seychelle Gabriel</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/OSx3Ilc.png" alt="character image">
+<div class="name"><h1>Isadora Santiago</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Afiliada of Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://izzyemmysanti.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/732182126049607680/name-isadora-izzy-emmeline-santiago-age"></a>
+</div>
+<div class="quotes">
+    <p>"I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item aff 20s 20 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Twenty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Assistant to Sawyer Decker & Paralegal at Decker & Associates</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Victoria Pedretti</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/R2eVTYv.png" alt="character image">
+<div class="name"><h1>Isla Sinclair</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>CAIT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Hangaround for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://www.tumblr.com/islasinclxir"></a>
+    <a class="ph ph-article" title="bio" href="/post/740455624581758976/name-isla-sinclair-age-28-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"I just want to be better than I ever was."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+<!--- START CHARACTER ----->
+
+<div class="item gov law 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Criminal Profiler</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Hazal Filiz Küçükköse</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/xNIelFs.png" alt="character image">
+<div class="name"><h1>Isra Sakarya</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>SARAH • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://israsakarya.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/746578416366714880/name-isra-sakarya-age-36-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"She carries too much deadly in her bones to be a distressed damsel, this is a woman who distresses demons instead."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+
+<!--- START CHARACTER ----->
+
+<div class="item mem npc m 50 te"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Fifty</a> <!--- add age here ----->
+    <a class="" alt="occupation">Co-Owner and Co-Founder of The Enterprise Casino Conglomerate</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Idris Elba</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/JEUBo8T.png" alt="character image">
+<div class="name"><h1>Jacque Riley</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">CIO of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"Don't mistake silence for weakness. Smart people don't plan big moves out loud."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->    
+
+
+<!--- START CHARACTER ----->
+
+<div class="item sos aff 40 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Unemployed</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Kelly Reilly</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/StF4QzD.png" alt="character image">
+<div class="name"><h1>Janelle Decker</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>M • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Old Lady</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+<a class="ph ph-user" title="blog" href="https://nelliedecker.tumblr.com/"></a>
+
+    <a class="ph ph-article" title="bio" href="/post/733285414557925376/name-janelle-nellie-decker-age-46-time-living"></a>
+</div>
+<div class="quotes">
+    <p>"There's a lotta things in common between me and ol' Jack D, you could never handle your whiskey, and you could never handle me."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item mem dead te m npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age" href="https://colemonroe.tumblr.com/post/703053618332467200/the-wolf-in-your-darkest-room-where-decker" title="death thread">Deceased</a> <!--- add age here ----->
+    <a class="" alt="occupation">Former Owner of Decker Family Horse Ranch</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Jeff Bridges</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/aFKELNg.png" alt="character image">
+<div class="name"><h1>Jeffrey Decker</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Former Board Member of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"There is no good. There is no evil. There is only power, and those too weak to see it."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+
+<!--- START CHARACTER ----->
+
+<div class="item active mem 40 m sos"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-two</a> <!--- add age here ----->
+    <a class="" alt="occupation">Co-Owner of StopShop</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Cole Hauser</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/A8UDucf.png" alt="character image">
+<div class="name"><h1>Jensen Walker</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Patched Member</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://jensenwalker.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646786820554752/name-jensen-walker-age-42-occupation-co-owner"></a>
+</div>
+<div class="quotes">
+    <p>"It's the one constant in life. You build something worth having, someone’s gonna try and take it."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+
+<!--- START CHARACTER ----->
+
+<div class="item active mem 30 m ls"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Bouncer at The Raven</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Joe Manganiello</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/xDxAVqy.png" alt="character image">
+<div class="name"><h1>Jesse Lombardi</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">NARCOS FOR LOS SANTOS</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://jesselombardi.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/740357941876703232/name-jesse-lombardi-age-38-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"The content of your character is your choice. Day by day, what you choose, what you think, and what you do is who you become."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item npc 40 m sos"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of License to Grill</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Benjamin Hollingsworth</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/xHlygLl.png" alt="character image">
+<div class="name"><h1>Joel Brooks</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANNIE • SHE/HER • GMT -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Patched Member</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://joel-brooks.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/private/710378635266277376/tumblr_u7K3hWfd6ftRbmpgQ"></a>
+</div>
+<div class="quotes">
+    <p>"He's somewhere between a hangman's knot, and three mouths to feed, there wasn't a wrong or a right he could choose, he did what he had to do."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item aff npc dead te f"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age" href="https://romanmcnulty.tumblr.com/post/707561489980096512/kateemcnulty-romanmcnultystill-too-early-to" title="death thread">Deceased</a> <!--- add age here ----->
+    <a class="" alt="occupation">Former Harstylist at Lavished Lacquer</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Meghann Fahy</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/bU6aCRs.png" alt="character image">
+<div class="name"><h1>Kate McNulty</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Former Soldier for The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-article" title="bio" href="/post/739646933719793664/name-kate-mcnulty-age-29-occupation-hair"></a>
+</div>
+<div class="quotes">
+    <p>"I want to be defined by the things I love, not the things I hate, or am afraid of. Not the things that haunt me in the middle of the night. I just think you are what you love."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item aff sos 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-five</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of The Lost Word</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Priscilla Quintana</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/Z684EMz.png" alt="character image">
+<div class="name"><h1>Kathryn Haringer</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANGIE • SHE/HER • GMT+1</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Hangaround for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://kathrynharinger.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738924086265348096/name-kathryn-dice-haringer-age-35-occupation"></a>
+</div>
+<div class="quotes">
+    <p>"Clever as the Devil and twice as pretty."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->     
+                        
+<!--- START CHARACTER ----->
+
+<div class="item m npc 20"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Nineteen</a> <!--- add age here ----->
+    <a class="" alt="occupation">Apprentice Mechanic<br> at Reaper Crew</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Dylan Sprayberry</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/ZNPkQkW.png" alt="character image">
+<div class="name"><h1>Kip Austin</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Prospect for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    
+</div>
+<div class="quotes">
+    <p>"Neverland is home to lost boys like me and lost boys like me are free."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+
+<!--- START CHARACTER ----->
+
+<div class="item f 50 sos aff npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Fifty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Jeweler</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Diane Lane</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/Pz2cWzY.png" alt="character image">
+<div class="name"><h1>Laura Monroe</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Old Lady</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-article" title="back story" href="https://colemonroe.tumblr.com/post/732748116657356800/monroe-family-originally-from-knoxville"></a>
+</div>
+<div class="quotes">
+    <p>"I wanna wear my heart on my sleeve but be tough when I have to. I wanna dust off the stars and hang them on the wall for you."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->    
+
+
+<!--- START CHARACTER ----->
+
+<div class="item f 60 npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Sixty-nine</a> <!--- add age here ----->
+    <a class="" alt="occupation">L&T Family Jewelers</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Katey Sagal</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/wKSke0F.png" alt="character image">
+<div class="name"><h1>Lilah Knox</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"No mountain is endless. Some are just steeper than others."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item npc te 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-one</a> <!--- add age here ----->
+    <a class="" alt="occupation">Co-Owner of Two Kings Casino</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Michael B. Jordan</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/FSyLsBB.png" alt="character image">
+<div class="name"><h1>Lincoln Riley</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>GREY • SHE/HER • EST -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Board Member of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://lincoln-riley.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738922559074189312/name-lincoln-link-riley-age-32-occupation"></a>
+</div>
+<div class="quotes">
+    <p>"A knife in my heart couldn't slow me down, 'cause power is power -- my fire never goes out."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item aff sos f active 30"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Sammy + Lo</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Candice King</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/VpH41km.png" alt="character image">
+<div class="name"><h1>Logan Donovan</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Hangaround for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://logandonovan.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738922672382230528/name-logan-donovan-age-33-occupation-owner-of"></a>
+</div>
+<div class="quotes">
+    <p>"Just because you are soft doesn't mean you are not a force. Honey and wildfire are both the color of gold."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->      
+
+<!--- START CHARACTER ----->
+
+<div class="item te mem m active 30"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Director of Communications for The Enterprise</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Michael Evans Behling</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/1B8TsHQ.png" alt="character image">
+<div class="name"><h1>Lorenzo Ricci</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>RAY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Board Member of The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://lorenzoriccis.tumblr.com"></a>
+    <a class="ph ph-article" title="bio" href="/post/744942774725558272/name-lorenzo-ricci-age-33-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"What the superior man seeks is in himself; what the small man seeks is in others."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item na f active 60"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Sixty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of PottHeads</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Jennifer Connelly</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/F01ASbQ.png" alt="character image">
+<div class="name"><h1>Lorna Davidson</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ARI • THEY/THEM • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://lorna-davidson.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/744045744421584896/name-lorna-davidson-age-63-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"Life changes in the instant. The ordinary instant."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item na f active 30"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-two</a> <!--- add age here ----->
+    <a class="" alt="occupation">House Wife</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Greta Onieogu</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/J5w4Jpp.png" alt="character image">
+<div class="name"><h1>Lotus Hurston</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>CAIT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://lotushurston.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/750416882996215808/name-lotus-lo-hurston-age-32-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"Being pretty is a job."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item aff na f active 40"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-one</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Meredith's Vines Winery</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Brittany Snow</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/3NlYRkT.png" alt="character image">
+<div class="name"><h1>Lydia Donovan</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>RAY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://lydsdonovan.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646616851611648/name-lydia-donovan-age-41-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"You must be brave, little daughter, and remember that the stronger the wind the stronger the tree needs to be."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item aff ls f 30 active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-seven</a> <!--- add age here ----->
+    <a class="" alt="occupation">Manager & Dancer at The Raven Gentlemen's Club</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Shay Mitchell</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/q1mMiUl.png" alt="character image">
+<div class="name"><h1>Lyla Salazar</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Afiliada for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://lylasalazar.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738922928332210176/name-lyla-salazar-age-37-occupation-dancer-at"></a>
+</div>
+<div class="quotes">
+    <p>"People stare at me like they've never seen a walking goddess before."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item aff sos f active 30"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Mechanic at Reaper Crew</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Lyndsy Fonseca</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/X5tiufp.png" alt="character image">
+<div class="name"><h1>Maeve MacNally</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Hangaround for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://maevemacnally.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738924821483765760/name-maeve-celeste-macnally-age-36-time-living"></a>
+</div>
+<div class="quotes">
+    <p>"I just wanted you to know this is me trying, at least I'm trying."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem 30 m sos active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty</a> <!--- add age here ----->
+    <a class="" alt="occupation">Security at The Raven Gentlemen's Club</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Paul Mescal</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/0SHu6Ho.png" alt="character image">
+<div class="name"><h1>Malcolm Cohen</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>RAY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Prospect for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://malcohen.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739647074190147584/name-malcolm-cohen-age-32-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"The loneliest moment in someone’s life is when they are watching their whole world fall apart, and all they can do is stare blankly."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item mem dead m npc sos"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Deceased</a> <!--- add age here ----->
+    <a class="" alt="occupation">President of the Sons of Silence Tonopah Valley Charter</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Brad Pitt</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/CjDjuut.png" alt="character image">
+<div class="name"><h1>Michael Monroe</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Founding Member of the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://fearthereaperx.tumblr.com/"></a>
+    <a class="ph ph-article" title="back story" href="https://colemonroe.tumblr.com/post/732748116657356800/monroe-family-originally-from-knoxville"></a>
+</div>
+<div class="quotes">
+    <p>"Afoot and light-hearted, I take to the open road, healthy, free, the world before me, the long brown path before me, leading wherever I choose."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item aff te 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Secret escort, waitress at Gold Dust Diner, & student at UNLV</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Adria Arjona</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/BGUu8qc.png" alt="character image">
+<div class="name"><h1>Mikayla Beaumont</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Associate for The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://heyymikki.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738924946533875712/name-mikayla-beaumont-age-33-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"She's imperfect, but she tries; She is good, but she lies; She is hard on herself; She is broken and won't ask for help; She is messy, but she's kind; She is lonely most of the time; She is all of this mixed up and baked in a beautiful pie; She is gone, but she used to be mine."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+                        
+<!--- START CHARACTER ----->
+
+<div class="item na law 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Tonopah Valley Police Department SVU Detective</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Yasmine Al-Bustami</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/oyASxQT.png" alt="character image">
+<div class="name"><h1>Nadia Zahedah</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://nadiazahedah.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739647131955134464/name-nadia-mayumi-zahedah-age-36-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"There were two ways to be happy: improve your reality, or lower your expectations."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+    
+
+<!--- START CHARACTER ----->
+
+<div class="item mem sos 40 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of The Raven Gentlemen's Club</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Sebastian Stan</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/Lt0TLuu.png" alt="character image">
+<div class="name"><h1>Nathaniel Donovan</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>AMY • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Vice President of the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://nathaniel-donovan.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738922780528132096/name-nathaniel-donovan-age-39-occupation-owner"></a>
+</div>
+<div class="quotes">
+    <p>"I ain't goin' to run, I'm proud of what I've done. Read me my rights, put me in cuffs."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+
+<!--- START CHARACTER ----->
+
+<div class="item ls 30 m mem active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">THIRTY-NINE</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Dionysos</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Ben Barnes</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/c0rmyHI.png" alt="character image">
+<div class="name"><h1>Nikolaos Dimopoulos</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>RAY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Capo for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://nikodimopoulos.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646340146020352/name-nikolaos-dimopoulos-age-39-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"No man ever steps in the same river twice, for it’s not the same river and he’s not the same man."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+
+<!--- START CHARACTER ----->
+
+<div class="item sos 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">Cosmetologist & Owner of Lavished Lacquer</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Riley Keough</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/oSm6c7I.png" alt="character image">
+<div class="name"><h1>Olivia Sinclair</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>MISSA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Hangaround for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://oliviaxsinclair.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646052154654720/name-olivia-sinclair-age-33-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"A mess of beautiful contradictions make her whole, she wears fire for skin but a storm lives in her soul."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item na 40 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of Sunset Valley<br> Bed & Breakfast</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Nadine Velazquez</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/4KNUl2d.png" alt="character image">
+<div class="name"><h1>Penelope Beaumont</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://penelopebeaumont.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646397671964672/name-penelope-beaumont-age-48-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"Just put the car in drive, and don't stop runnin' 'til you're long gone. They'll never slow you down if you don't look over your shoulder."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->      
+
+<!--- START CHARACTER ----->
+
+<div class="item law gov 40 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-one</a> <!--- add age here ----->
+    <a class="" alt="occupation">ATF Supervisory Special Agent & Lead of ATF/DEA Task Force</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">William Levy</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/OEhANQl.png" alt="character image">
+<div class="name"><h1>Rafael Navarro</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>M • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://rafenavarro.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/733098508533547008/name-rafael-navarro-age-41-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"Without violence, how do I understand my life as meaningful? As if the only tool I owned for finding truth was a knife. Go as far as you can with that tool, says a voice in my head, then bury it and pick up something else."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->      
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item aff 30 ls f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-four</a> <!--- add age here ----->
+    <a class="" alt="occupation">ER Nurse at Tonopah<br> Medical Center</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Ana de Armas</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/iR7t6lv.png" alt="character image">
+<div class="name"><h1>Reina Santiago</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>GREY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Afiliada of Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://reina-santiago.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738923007737823232/name-reina-santiago-age-34-occupation-er"></a>
+</div>
+<div class="quotes">
+    <p>"Let me introduce you to the featherweight queen, she got Hollywood eyes, but you can't shoot what she's seen."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem sos 20 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Twenty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Head Chef at License to Grill</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Logan Lerman</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/RXWE0vN.png" alt="character image">
+<div class="name"><h1>Rex Luther</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>MISSA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Patched Member</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://lutherxrex.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/744495828052344832/name-rex-luther-age-28-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"Expectations make people miserable, so whatever yours are, lower them. You'll definitely be happier."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->     
+
+<!--- START CHARACTER ----->
+
+<div class="item mem sos m 30 active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Mortician & Former<br> Structural Engineer</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Chris Wood</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/pkSdUcv.png" alt="character image">
+<div class="name"><h1>Riley MacNally</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANNIE • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Road Captain for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://riley-macnally.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738923116156338176/name-riley-macnally-age"></a>
+</div>
+<div class="quotes">
+    <p>"Who I am is where I stand, where I stand is where I fall."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item mem ls 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner & Tattoo Artist<br> at Cosmic Ink</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Manny Montana</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/Ip0jZL0.png" alt="character image">
+<div class="name"><h1>Rio Romero</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANNIE • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Teniente for Los Santos</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://rio-romero.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738923238482116608/name-rio-romero-age-36-occupation-cosmic-ink"></a>
+</div>
+<div class="quotes">
+    <p>"Good men don't need rules. Today is not the day to find out why I have so many."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item mem te npc m dead"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age" href="https://romanmcnulty.tumblr.com/post/724846685303504897/on-sleepless-roads-the-sleepless-go-part-two" title="death thread">Deceased</a> <!--- add age here ----->
+    <a class="" alt="occupation">Former Baker at<br> Sweet Dreams Bakeshop</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Chris Hemsworth</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/OYXDbhO.png" alt="character image">
+<div class="name"><h1>Roman McNulty</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Former Soldier for The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://romanmcnulty.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/732182438527320064/name-roman-mcnulty-age-37-occupation-baker-at"></a>
+</div>
+<div class="quotes">
+    <p>"I tore my life in two and pulled the ends apart. are you seeing who you wanna see? 'cause I feel caught in the middle."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item aff sos 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Co-Owner of StopShop</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Emmy Rossum</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/McTPjLR.png" alt="character image">
+<div class="name"><h1>Rowan MacNally</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>GREY • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Old Lady</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://rowan-macnally.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739646992257515520/name-rowan-macnally-age-38-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"But I'm just a soul whose intentions are good. Oh, Lord, please don’t let me be misunderstood."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item law ls gov aff 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-three</a> <!--- add age here ----->
+    <a class="" alt="occupation">ATF Special Agent</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Han Soo-Hee</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/hrcJJJY.png" alt="character image">
+<div class="name"><h1>Ruby Jeong</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>A • SHE/HER • GMT+2</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">LA ASOCIACIÓN FOR LOS SANTOS</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://rubyjeongx.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739645895664189440/name-ruby-jeong-age-33-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"I know what I bring to the table, so trust me when I say - I'm not afraid to eat alone."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item aff f 30 active sos law"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-nine</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner & Criminal Defense Attorney at Decker & Associates</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Claire Holt</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/XOf76n1.png" alt="character image">
+<div class="name"><h1>Sawyer Decker</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Lawyer for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://sawyerdecker.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738923388879421440/name-sawyer-decker-age-38-occupation-owner-of"></a>
+</div>
+<div class="quotes">
+    <p>"I have touched the fire and danced in the ashes of every bridge I ever burned. I fear no hell from you."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+<!--- START CHARACTER ----->
+
+<div class="item mem dead m sos npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age" href="https://colemonroe.tumblr.com/post/697142802795184128/where-fall-bike-festival-with-closed-cole-felt" title="death thread">Deceased</a> <!--- add age here ----->
+    <a class="" alt="occupation">Former Vice President of<Br> the Sons of Silence</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Ahmet Mümtaz Taylan</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/wNXKmvS.png" alt="character image">
+<div class="name"><h1>Serkan Tezel</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Founding Member of the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+</div>
+<div class="quotes">
+    <p>"Is freedom anything else than the right to live as we wish? Nothing else."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item na law 40 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Forty-two</a> <!--- add age here ----->
+    <a class="" alt="occupation">Tonopah Valley Police Department Homicide Detective</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Jesse Lee Soffer</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/eLcAdZf.png" alt="character image">
+<div class="name"><h1>Shepherd Decker</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRIANA • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://shepdecker.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738923788740198400/name-shepherd-theodore"></a>
+</div>
+<div class="quotes">
+    <p>"It may sound absurd, but don't be naive, even heroes have the right to bleed."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+<!--- START CHARACTER ----->
+
+<div class="item te mem 30 m npc"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-four</a> <!--- add age here ----->
+    <a class="" alt="occupation">Co-Owner of Two Kings Casino</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Trevante Rhodes</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/JaNDcI7.png" alt="character image">
+<div class="name"><h1>Sullivan Riley</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST -- NPC</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Board Member for The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-article" title="bio" href="/post/747695782547849216/name-sullivan-riley-age-34-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"When we are young we are taught the difference between the hero and the villain. Good and evil. A savior and a lost cause. What if the only difference is who is telling the story? "
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item aff sos f active 30"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-two</a> <!--- add age here ----->
+    <a class="" alt="occupation">Tonopah Valley Fire Chief</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Melisa Aslı Pamuk</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/VLfiExN.png" alt="character image">
+<div class="name"><h1>Taliah Tezel</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ANNIE • SHE/HER • GMT</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Old Lady</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://taliah-tezel.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738923559687274496/name-taliah-tezel-age-31-occupation-fire"></a>
+</div>
+<div class="quotes">
+    <p>"Fight so dirty but you love so sweet, talk so pretty but your heart got teeth."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->   
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem sos m active 30"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-seven</a> <!--- add age here ----->
+    <a class="" alt="occupation">Security at The Outpost</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Scott Eastwood</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/G5eY9Ue.png" alt="character image">
+<div class="name"><h1>Taylor Palmer</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>CAIT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sons of Silence Patched Member</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://taylorpalmcr.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/744946485892988928/name-taylor-palmer-age-thirty-seven-time-living"></a>
+</div>
+<div class="quotes">
+    <p>"A good death only comes after a good life."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->  
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem sos 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-six</a> <!--- add age here ----->
+    <a class="" alt="occupation">Bartender at Mad Dog Brewery</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Zac Efron</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/QafQnPC.png" alt="character image">
+<div class="name"><h1>Theodore Knox</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>BRITT • SHE/HER • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Sergeant-at-Arms for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://theodoreknox.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/738923689912008704/name-theodore-knox-age-36-occupation-bartender"></a>
+</div>
+<div class="quotes">
+    <p>"I stopped telling myself that I am lost; I am not. I am on a road with no destination. I am just driving with the hope that I find a place that I like, and I will just stay there. I am not lost; I am on my way."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->     
+                        
+<!--- START CHARACTER ----->
+
+<div class="item m npc 60"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Sixty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Owner of The Knox Ranch</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Kevin Costner</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/ldUn5Cb.png" alt="character image">
+<div class="name"><h1>Thomas Knox</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>NON-PLAYABLE CHARACTER</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Neutral Civilian</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    
+</div>
+<div class="quotes">
+    <p>"All the angels are gone, there’s only devils left."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->   
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem te 30 f active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-eight</a> <!--- add age here ----->
+    <a class="" alt="occupation">Author & Freelance Journalist</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Gugu Mbatha-Raw</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/7BG703C.png" alt="character image">
+<div class="name"><h1>Valentina Ricci</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ARI • THEY/THEM • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Board Member for The Enterprise</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://valentina--ricci.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/733097052347809793/name-valentina-ricci-age-38-time-living-in"></a>
+</div>
+<div class="quotes">
+    <p>"Come celebrate with me that everyday something has tried to kill me and has failed."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+                        
+<!--- START CHARACTER ----->
+
+<div class="item mem sos 30 m active"> <!--- add your filters after item ----->
+    <div class="profile"> 
+    <a class="" alt="age">Thirty-seven</a> <!--- add age here ----->
+    <a class="" alt="occupation">Groundskeeper at Bountiful Harvest Vineyard & Winery</a> <!--- add occupation here ----->
+    <a class="" alt="face claim">Martin Sensmeier</a> <!--- add face claim here ----->
+</div>
+                     <!--- end hover profile ----->
+<!--- add image link here ----->
+<img src="https://i.imgur.com/hrhKCHn.png" alt="character image">
+<div class="name"><h1>William York</h1></div><!--- add characetr name here ----->
+<div class="info" alt="writer"><p>ARI • THEY/THEM • EST</p></div><!--- WRITER  • PRO/NOUNS  • TIMEZONE ----->
+<div class="extrainfo"><div class="status" alt="affiliation">Treasurer for the Sons of Silence</div><!--- add affiliation here ----->
+</div>
+
+<!--- links start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="https://will-york.tumblr.com/"></a>
+    <a class="ph ph-article" title="bio" href="/post/739645975127277568/name-william-york-age-37-time-living-in-tonopah"></a>
+</div>
+<div class="quotes">
+    <p>"The will must be stronger than the skill."
+    </p><!--- QUOTE GOES HERE ----->  
+</div>
+</div>
+<!--- FINISH CHARACTER ----->
+
+<!--- START CHARACTER -----
+
+<div class="item FILTERS GO HERE">
+    <div class="profile"> 
+    <a class="" alt="age">AGE</a> 
+    <a class="" alt="occupation">OCCUPATION</a> 
+    <a class="" alt="face claim">FACE CLAIM</a> 
+</div>
+                     
+<img src="https://place-hold.it/255x375" alt="character image">
+<div class="name"><h1>Character Name</h1></div>
+<div class="info" alt="writer"><p>WRITER • PRO/NOUNS • TIMEZONE</p></div>
+<div class="extrainfo"><div class="status" alt="affiliation">AFFILIATION</div>
+</div>
+
+<div class="clickies">
+    <a class="ph ph-user" title="blog" href="BLOG LINK HERE"></a>
+    <a class="ph ph-article" title="bio" href="BIO LINK HERE"></a>
+</div>
+<div class="quotes">
+    <p>"CHARACTER QUOTE GOES HERE"
+    </p>
+</div>
+</div>
+<!--- FINISH CHARACTER -----> 
+
+
+
+
+                        <!-- END YOUR CHARACTERS HERE -->
+
+
+
+
+
+<!--- isotope filtering  ----->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/gh/fakethemes/gifpackpages@latest/crystalclear/JS/filters.js"></script>
+
+</center>
+</div> <!--end grid --->
+</div>
+<div class="credit"><a class="ph-fill ph-sparkle" title="gif pack directory by fakehelper" href="https://fakehelper.tumblr.com/"></a></div><!--don't touch this pls it took me forever like plS donut do it-->
+</body>
+</html>
